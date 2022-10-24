@@ -2,6 +2,8 @@ package com.example.salledesportapplication;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -39,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(username.getText().toString().equals("admin")&&password.getText().toString().equals("admin")){
                     Toast.makeText(MainActivity.this,"Login Successfull",Toast.LENGTH_SHORT).show();
+                    //Fragment fragment=new biceps();
+                    //FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+                    //fragmentTransaction.replace(R.id.container,fragment).commit();
                 }else{
                     Toast.makeText(MainActivity.this,"Login Failed !!",Toast.LENGTH_SHORT).show();
 
@@ -81,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     }
     void navigateToSecondActivity(){
         finish();
-        Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+        Intent intent = new Intent(MainActivity.this,dorsaux.class);
         startActivity(intent);
     }
 }

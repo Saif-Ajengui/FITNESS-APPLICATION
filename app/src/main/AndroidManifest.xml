@@ -16,6 +16,18 @@
         android:theme="@style/Theme.SalleDeSportApplication"
         tools:targetApi="31">
         <activity
+            android:name=".dorsaux"
+            android:exported="false" />
+        <activity
+            android:name=".abdos"
+            android:exported="false" />
+        <activity
+            android:name=".jambes"
+            android:exported="false" />
+        <activity
+            android:name=".bicepss"
+            android:exported="false" />
+        <activity
             android:name=".SecondActivity"
             android:exported="false" />
         <activity

@@ -10,10 +10,15 @@
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/activity_jambes.xml" value="0.18177083333333333" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/activity_list.xml" value="0.203125" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/activity_menu.xml" value="0.1625" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/activity_second.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_biceps.xml" value="0.1" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_blank.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_gallery.xml" value="0.1625" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/nav_header_menu.xml" value="0.1625" />
+        <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/menu/activity_main_drawer.xml" value="0.1625" />
+        <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/menu/menu.xml" value="0.1625" />
       </map>
     </option>
   </component>

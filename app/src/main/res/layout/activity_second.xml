@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome"
         android:layout_centerHorizontal="true"
-        android:textSize="34sp"/>
+        android:text="Welcome"
+        android:textSize="34sp" />
 
     <ImageView
         android:id="@+id/imageUser"
@@ -44,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/signout"
-        android:text="Sign out"
+        android:text="button"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"/>
 </RelativeLayout>

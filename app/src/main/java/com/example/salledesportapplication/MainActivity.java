@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     }
     void navigateToSecondActivity(){
         finish();
-        Intent intent = new Intent(MainActivity.this,dorsaux.class);
+        Intent intent = new Intent(MainActivity.this,menu.class);
         startActivity(intent);
     }
 }

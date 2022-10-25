@@ -22,6 +22,10 @@ public class SecondActivity extends AppCompatActivity {
     GoogleSignInClient gsc;
     TextView name,email;
     Button signOutBtn;
+    Button aBtn;
+    Button bBtn;
+    Button dBtn;
+    Button jtn;
     ImageView userImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,7 @@ public class SecondActivity extends AppCompatActivity {
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
         signOutBtn = findViewById(R.id.signout);
+
 
 
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
@@ -61,7 +66,7 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onComplete(Task<Void> task) {
                 finish();
-                startActivity(new Intent(SecondActivity.this,MainActivity.class));
+                startActivity(new Intent(SecondActivity.this,bicepss.class));
             }
         });
     }

@@ -1,4 +1,4 @@
-package com.example.salledesportapplication.ui.slideshow;
+package com.example.salledesportapplication.ui.jambes;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,19 +14,18 @@ import androidx.fragment.app.Fragment;
 
 import com.example.salledesportapplication.R;
 
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class SlideshowFragment extends Fragment {
+public class JambesFragment extends Fragment {
 
 
-    private ListView listDorsaux;
+    private ListView listJambes;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_dorsaux, container, false);
+        View root = inflater.inflate(R.layout.fragment_jambes, container, false);
 
-        listDorsaux = root.findViewById(R.id.list_biceps);
+        listJambes= root.findViewById(R.id.list_biceps);
         ArrayList<HashMap<String, String>> listItem = new ArrayList<>();
 
         // On déclare la "HashMap" qui contiendra les informations pour un item
@@ -40,11 +39,11 @@ public class SlideshowFragment extends Fragment {
                 getResources().getString(R.string.Exercice5)};
         // Icones (images) des items
         String[] icon = new String[]{
-                String.valueOf(R.drawable.d1),
-                String.valueOf(R.drawable.d2),
-                String.valueOf(R.drawable.d3),
-                String.valueOf(R.drawable.d4),
-                String.valueOf(R.drawable.d5)};
+                String.valueOf(R.drawable.j1),
+                String.valueOf(R.drawable.j2),
+                String.valueOf(R.drawable.j3),
+                String.valueOf(R.drawable.j4),
+                String.valueOf(R.drawable.j5)};
         // Creation des items de la liste
         for (int i = 0; i < 5; i++) {
             item = new HashMap<>();
@@ -61,13 +60,13 @@ public class SlideshowFragment extends Fragment {
                     new String[]{"title", "icon"},
                     new int[]{R.id.titre, R.id.img});
             // Association de l’adapter à la liste
-            listDorsaux.setAdapter(adapter);
+            listJambes.setAdapter(adapter);
         }
-        listDorsaux.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listJambes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                HashMap item = (HashMap) listDorsaux.getItemAtPosition(position);
+                HashMap item = (HashMap) listJambes.getItemAtPosition(position);
                 Toast.makeText(getActivity(), "" + item.get("title"), Toast.LENGTH_SHORT).show();
             }
         });

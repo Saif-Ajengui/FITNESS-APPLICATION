@@ -1,4 +1,4 @@
-package com.example.salledesportapplication.ui.gallery;
+package com.example.salledesportapplication.ui.biceps;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

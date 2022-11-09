@@ -6,19 +6,23 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/abdos"
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_abdos"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Abdos" />
         <item
-            android:id="@+id/biceps"
+            android:id="@+id/nav_biceps"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Biceps" />
         <item
-            android:id="@+id/dorsaux"
+            android:id="@+id/nav_dorsaux"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Dorsaux" />
         <item
-            android:id="@+id/jambes"
+            android:id="@+id/nav_jambes"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Jambes" />
     </group>

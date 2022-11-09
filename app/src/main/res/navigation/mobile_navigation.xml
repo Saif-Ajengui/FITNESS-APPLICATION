@@ -12,14 +12,24 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.salledesportapplication.ui.gallery.GalleryFragment"
+        android:id="@+id/nav_biceps"
+        android:name="com.example.salledesportapplication.ui.biceps.BicepsFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_biceps" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_dorsaux"
         android:name="com.example.salledesportapplication.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_dorsaux" />
+    <fragment
+        android:id="@+id/nav_jambes"
+        android:name="com.example.salledesportapplication.ui.jambes.JambesFragment"
+        android:label="@string/menu_jambes"
+        tools:layout="@layout/fragment_jambes" />
+    <fragment
+        android:id="@+id/nav_abdos"
+        android:name="com.example.salledesportapplication.ui.abdos.AbdosFragment"
+        android:label="@string/menu_abdos"
+        tools:layout="@layout/fragment_abdos" />
 </navigation>

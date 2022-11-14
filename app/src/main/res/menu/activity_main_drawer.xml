@@ -25,5 +25,6 @@
             android:id="@+id/nav_jambes"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Jambes" />
+
     </group>
 </menu>

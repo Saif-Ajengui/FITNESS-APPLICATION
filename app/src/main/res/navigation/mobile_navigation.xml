@@ -32,4 +32,5 @@
         android:name="com.example.salledesportapplication.ui.abdos.AbdosFragment"
         android:label="@string/menu_abdos"
         tools:layout="@layout/fragment_abdos" />
+
 </navigation>

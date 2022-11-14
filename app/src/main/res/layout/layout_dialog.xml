@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:scrollbars="vertical"
+         android:scrollbarAlwaysDrawVerticalTrack="true">
+
+         <!-- Day 1-->
+         <TextView
+             android:id="@+id/txt1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:text="Day1"
+             android:textColor="#0e1843"
+             android:textSize="15dp"
+             android:textStyle="bold"
+             android:typeface="monospace" />
+
+         <EditText
+             android:id="@+id/gymOne"
+             android:layout_width="220dp"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/txt1"
+             android:layout_marginTop="5dp"
+             android:inputType="text"
+             android:text="Workout"
+             android:textSize="12dp" />
+         <EditText
+             android:id="@+id/nbr_exercices_DayOne"
+             android:layout_width="220dp"
+             android:layout_height="wrap_content"
+             android:text="Number of Exercices"
+             android:textSize="12dp"
+             android:layout_below="@+id/gymOne"
+             android:layout_marginTop="10dp"
+             android:inputType="number"
+             />
+         <!-- Day 2 -->
+         <TextView
+             android:id="@+id/txt2"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/nbr_exercices_DayOne"
+             android:layout_marginLeft="3dp"
+             android:layout_marginTop="10dp"
+             android:text="Day 2"
+             android:textColor="#0e1843"
+             android:textSize="15dp"
+             android:textStyle="bold"
+             android:typeface="monospace" />
+         <EditText
+             android:id="@+id/gym2"
+             android:layout_width="220dp"
+             android:layout_height="wrap_content"
+             android:text="Workout"
+             android:textSize="12dp"
+             android:layout_below="@+id/txt2"
+             android:layout_marginTop="5dp"
+             android:inputType="text"/>
+         <EditText
+             android:id="@+id/nbr_exercices_Day2"
+             android:layout_width="220dp"
+             android:layout_height="wrap_content"
+             android:text="Number of Exercices"
+             android:textSize="12dp"
+             android:layout_below="@+id/gym2"
+             android:layout_marginTop="10dp"
+             android:inputType="number"
+             />
+         <!-- Day 3 -->
+         <TextView
+             android:id="@+id/txt3"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/nbr_exercices_Day2"
+             android:layout_marginLeft="3dp"
+             android:layout_marginTop="10dp"
+             android:text="Day 3"
+             android:textColor="#0e1843"
+             android:textSize="15dp"
+             android:textStyle="bold"
+             android:typeface="monospace" />
+         <EditText
+             android:id="@+id/gym3"
+             android:layout_width="220dp"
+             android:layout_height="wrap_content"
+             android:text="Workout"
+             android:textSize="12dp"
+             android:layout_below="@+id/txt3"
+             android:layout_marginTop="5dp"
+             android:inputType="text"/>
+         <EditText
+             android:id="@+id/nbr_exercices_Day3"
+             android:layout_width="220dp"
+             android:layout_height="wrap_content"
+             android:text="Number of Exercices"
+             android:textSize="12dp"
+             android:layout_below="@+id/gym3"
+             android:layout_marginTop="10dp"
+             android:inputType="number"
+             />
+
+         <!-- Day 4 -->
+         <TextView
+             android:id="@+id/txt4"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/nbr_exercices_Day3"
+             android:layout_marginLeft="3dp"
+             android:layout_marginTop="10dp"
+             android:text="Day 4"
+             android:textColor="#0e1843"
+             android:textSize="15dp"
+             android:textStyle="bold"
+             android:typeface="monospace" />
+         <EditText
+             android:id="@+id/gym4"
+             android:layout_width="220dp"
+             android:layout_height="wrap_content"
+             android:text="Workout"
+             android:textSize="12dp"
+             android:layout_below="@+id/txt4"
+             android:layout_marginTop="5dp"
+             android:inputType="text"/>
+         <EditText
+             android:id="@+id/nbr_exercices_Day4"
+             android:layout_width="220dp"
+             android:layout_height="wrap_content"
+             android:text="Number of Exercices"
+             android:textSize="12dp"
+             android:layout_below="@+id/gym4"
+             android:layout_marginTop="10dp"
+             android:inputType="number"
+             />
+
+         <!-- Day 5 -->
+         <TextView
+             android:id="@+id/txt5"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/nbr_exercices_Day4"
+             android:layout_marginLeft="3dp"
+             android:layout_marginTop="10dp"
+             android:text="Day 5"
+             android:textColor="#0e1843"
+             android:textSize="15dp"
+             android:textStyle="bold"
+             android:typeface="monospace" />
+         <EditText
+             android:id="@+id/gym5"
+             android:layout_width="220dp"
+             android:layout_height="wrap_content"
+             android:text="Workout"
+             android:textSize="12dp"
+             android:layout_below="@+id/txt5"
+             android:layout_marginTop="5dp"
+             android:inputType="text"/>
+         <EditText
+             android:id="@+id/nbr_exercices_Day5"
+             android:layout_width="220dp"
+             android:layout_height="wrap_content"
+             android:text="Number of Exercices"
+             android:textSize="12dp"
+             android:layout_below="@+id/gym5"
+             android:layout_marginTop="10dp"
+             android:inputType="number"
+             />
+     </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

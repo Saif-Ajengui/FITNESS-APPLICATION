@@ -47,7 +47,7 @@ public class menu extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_biceps, R.id.nav_dorsaux,R.id.nav_jambes,R.id.nav_abdos)
+                R.id.nav_home, R.id.nav_biceps, R.id.nav_dorsaux,R.id.nav_jambes,R.id.nav_abdos,R.id.nav_profil)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_menu);
@@ -65,6 +65,7 @@ public class menu extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.action_settings) {
+
             finish();
             startActivity(new Intent(menu.this, MainActivity.class));
         }

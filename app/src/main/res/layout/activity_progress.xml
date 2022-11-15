@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Progress">
+
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Fill out your weekly workout progress"
+        android:layout_margin="25sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <!-- Day 1 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- Left -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            >
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle_pink_blue"
+                android:gravity="center"
+                android:text="Mon"
+                android:textSize="19sp"
+                android:textColor="#0e1843"
+                />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="#808080"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <!-- END Left -->
+        <!-- Right -->
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:text="Push"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#0e1843"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="To Do"
+                    android:textSize="12dp"
+                    android:textColor="#0e1843"
+                    android:background="@color/purple_200"
+                    android:clickable="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="5 Exercices"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"
+                    android:textColor="#0e1843"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginRight="0dp"
+                    android:text="45 min"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"
+                    android:textColor="#CDCDCD"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- END Right -->
+    </LinearLayout>
+    <!-- END Day 1 -->
+    <!-- Day 2 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- Left -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            >
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle_pink_blue"
+                android:gravity="center"
+                android:text="Tue"
+                android:textSize="19sp"
+                android:textColor="#0e1843"
+                />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="#808080"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <!-- END Left -->
+        <!-- Right -->
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pul"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#0e1843"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="To Do"
+                    android:textSize="12dp"
+                    android:textColor="#0e1843"
+                    android:background="@color/purple_200"
+                    android:clickable="true"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="5 Exercices"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"
+                    android:textColor="#0e1843"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginRight="0dp"
+                    android:text="45 min"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"
+                    android:textColor="#CDCDCD"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- END Right -->
+    </LinearLayout>
+    <!-- End Day 2 -->
+    <!-- Day 3 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- Left -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            >
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle_pink_blue"
+                android:gravity="center"
+                android:text="Wed"
+                android:textSize="19sp"
+                android:textColor="#0e1843"
+                />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="#808080"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <!-- END Left -->
+        <!-- Right -->
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#0e1843"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="To Do"
+                    android:textSize="12dp"
+                    android:textColor="#0e1843"
+                    android:background="@color/purple_200"
+                    android:clickable="true"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="5 Exercices"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"
+                    android:textColor="#0e1843"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginRight="0dp"
+                    android:text="45 min"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"
+                    android:textColor="#CDCDCD"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- END Right -->
+    </LinearLayout>
+    <!-- End Day 3 -->
+    <!-- Day 4 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- Left -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            >
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle_pink_blue"
+                android:gravity="center"
+                android:text="Thur"
+                android:textSize="19sp"
+                android:textColor="#0e1843"
+                />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="#808080"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <!-- END Left -->
+        <!-- Right -->
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lower"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#0e1843"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="To Do"
+                    android:textSize="12dp"
+                    android:textColor="#0e1843"
+                    android:background="@color/purple_200"
+                    android:clickable="true"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="5 Exercices"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"
+                    android:textColor="#0e1843"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginRight="0dp"
+                    android:text="45 min"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"
+                    android:textColor="#CDCDCD"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- END Right -->
+    </LinearLayout>
+    <!-- End Day 4 -->
+    <!-- Day 5 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- Left -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            >
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle_pink_blue"
+                android:gravity="center"
+                android:text="Frid"
+                android:textSize="19sp"
+                android:textColor="#0e1843"
+                />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="#808080"
+                android:layout_marginTop="9dp"
+                />
+        </LinearLayout>
+        <!-- END Left -->
+        <!-- Right -->
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:text="Abs"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#0e1843"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="To Do"
+                    android:textSize="12dp"
+                    android:textColor="#0e1843"
+                    android:background="@color/purple_200"
+                    android:clickable="true"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="5 Exercices"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"
+                    android:textColor="#0e1843"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginRight="0dp"
+                    android:text="45 min"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"
+                    android:textColor="#CDCDCD"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- END Right -->
+    </LinearLayout>
+    <!-- End Day 5 -->
+
+</LinearLayout>

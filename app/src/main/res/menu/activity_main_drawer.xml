@@ -25,6 +25,10 @@
             android:id="@+id/nav_jambes"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Jambes" />
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Profile" />
 
     </group>
 </menu>

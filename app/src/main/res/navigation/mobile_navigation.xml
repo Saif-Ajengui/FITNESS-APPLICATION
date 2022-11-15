@@ -32,5 +32,9 @@
         android:name="com.example.salledesportapplication.ui.abdos.AbdosFragment"
         android:label="@string/menu_abdos"
         tools:layout="@layout/fragment_abdos" />
-
+    <fragment
+        android:id="@+id/nav_profil"
+        android:name="com.example.salledesportapplication.ui.profil.ProfileFragment"
+        android:label="@string/menu_profil"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

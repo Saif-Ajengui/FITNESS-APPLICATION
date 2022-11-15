@@ -20,7 +20,7 @@
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_biceps.xml" value="0.1" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_blank.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_custom.xml" value="0.1734375" />
-        <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_dialog.xml" value="0.1" />
+        <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_dialog.xml" value="0.22" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_dorsaux.xml" value="0.13489583333333333" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_exercices.xml" value="0.19704433497536947" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
@@ -29,6 +29,7 @@
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_jambes.xml" value="0.1" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_list_seance.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_profile.xml" value="0.146875" />
+        <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_progress.xml" value="0.13489583333333333" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/fragment_slideshow.xml" value="0.1625" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/layout_dialog.xml" value="0.146875" />
         <entry key="..\:/Users/Ajengui/AndroidStudioProjects/SalleDeSportApplication/app/src/main/res/layout/nav_header_menu.xml" value="0.1625" />

@@ -7,10 +7,12 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 
 /**
@@ -18,7 +20,12 @@ import android.widget.EditText;
  * create an instance of this fragment.
  */
 public class DialogFragment extends Fragment {
+    //var db
+    private AppDataBase database;
 
+
+    // Widgets
+    private Button addBtn;
     EditText gymOne, nbr_exercices_DayOne;
     EditText gym2,gym3,gym4,gym5,nbr_exercices_Day2,nbr_exercices_Day3,nbr_exercices_Day4,nbr_exercices_Day5;
     @Override
@@ -27,25 +34,11 @@ public class DialogFragment extends Fragment {
         // Inflate the layout for this
         View view =  inflater.inflate(R.layout.fragment_dialog, container, false);
 
-
-         /*             String txtOne = gymOne.getText().toString();
-                        int nbOne = Integer.valueOf(nbr_exercices_DayOne.getText().toString());
-
-                        String txt2 = gym2.getText().toString();
-                        int nb2 = Integer.valueOf(nbr_exercices_Day2.getText().toString());
-
-                        String txt3 = gym3.getText().toString();
-                        int nb3 = Integer.valueOf(nbr_exercices_Day3.getText().toString());
-
-                        String txt4 = gym4.getText().toString();
-                        int nb4 = Integer.valueOf(nbr_exercices_Day4.getText().toString());
-
-                        String txt5 = gym5.getText().toString();
-                        int nb5 = Integer.valueOf(nbr_exercices_Day5.getText().toString());
-                        // To See
-                        dialogInterface.applyTexts(txtOne,nbOne,txt2,nb2,txt3,nb3,txt4,nb4,txt5,nb5);
+        //init db
+        database = AppDataBase.getInstance(getActivity());
 
 
+        addBtn = view.findViewById(R.id.addBtn);
 
         gymOne = view.findViewById(R.id.gymOne);
         nbr_exercices_DayOne = view.findViewById(R.id.nbr_exercices_DayOne);
@@ -60,7 +53,20 @@ public class DialogFragment extends Fragment {
         nbr_exercices_Day4 = view.findViewById(R.id.nbr_exercices_Day4);
 
         gym5 = view.findViewById(R.id.gym5);
-        nbr_exercices_Day5 = view.findViewById(R.id.nbr_exercices_Day5);*/
+        nbr_exercices_Day5 = view.findViewById(R.id.nbr_exercices_Day5);
+        addBtn.setOnClickListener(l ->{
+            GymPlanModel gp = new GymPlanModel(gymOne.toString(),Integer.valueOf(nbr_exercices_DayOne.getText().toString()),false,gym2.toString(),Integer.valueOf(nbr_exercices_Day2.getText().toString()),false,gym3.toString(),Integer.valueOf(nbr_exercices_Day3.getText().toString()),false,gym4.toString(),Integer.valueOf(nbr_exercices_Day4.getText().toString()),false,gym5.toString(),Integer.valueOf(nbr_exercices_Day5.getText().toString()),false);
+            ajouterGymPlan(gp);
+            Fragment newFragment = new GymPlanFragment();
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+            transaction.replace(R.id.nav_host_fragment_content_menu, newFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+        });
+
+
+
         return view;
     }
    /* @Override
@@ -76,4 +82,18 @@ public class DialogFragment extends Fragment {
                         String gym4, int nbr_exercices_Day4,
                         String gym5, int nbr_exercices_Day5);
     }*/
+
+    public void ajouterGymPlan(GymPlanModel gp)
+    {
+        database.gymPlanDAO().deleteGymPlan();
+        database.gymPlanDAO().insertGymPlan(gp);
+    }
+    public GymPlanModel afficherGymPlan()
+    {
+        return  database.gymPlanDAO().getGymPlan();
+    }
+    public void suprimerGymPlan()
+    {
+        database.gymPlanDAO().deleteGymPlan();
+    }
 }

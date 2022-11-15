@@ -1,6 +1,5 @@
 package com.example.salledesportapplication.ui.home;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.salledesportapplication.GymPlanFragment;
-import com.example.salledesportapplication.Progress;
+import com.example.salledesportapplication.ProgressFragment;
 import com.example.salledesportapplication.R;
 import com.example.salledesportapplication.ui.abdos.AbdosFragment;
 import com.example.salledesportapplication.ui.profil.ProfileFragment;
@@ -65,9 +64,19 @@ public class HomeFragment extends Fragment {
 
         });
 
-        progressBtn.setOnClickListener(view -> {
-            Intent intent = new Intent(getActivity(), Progress.class);
-            startActivity(intent);
+        progressBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Fragment newFragment = new ProgressFragment();
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+                transaction.replace(R.id.nav_host_fragment_content_menu, newFragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+
         });
         settingsBtn.setOnClickListener(new View.OnClickListener()
         {

@@ -12,7 +12,7 @@ public interface GymPlanDAO {
     @Insert
     public void insertGymPlan(GymPlanModel gp);
 
-    @Query("SELECT * FROM gymplantable LIMIT 1")
+    @Query("SELECT * FROM gymplantable ORDER BY id DESC LIMIT 1")
     public GymPlanModel getGymPlan();
 
     @Query("DELETE FROM gymplantable")

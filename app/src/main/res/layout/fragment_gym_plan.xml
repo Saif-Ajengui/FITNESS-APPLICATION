@@ -29,7 +29,6 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/add_icon"
-
             />
         <Button
             android:id="@+id/deleteBtn"
@@ -80,7 +79,7 @@
             android:orientation="vertical"
             android:layout_marginLeft="10dp">
             <TextView
-                android:id="@+id/gymOne"
+                android:id="@+id/gyma"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Push"
@@ -160,7 +159,7 @@
             android:orientation="vertical"
             android:layout_marginLeft="10dp">
             <TextView
-                android:id="@+id/gym2"
+                android:id="@+id/gymb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pull"
@@ -241,7 +240,7 @@
             android:orientation="vertical"
             android:layout_marginLeft="10dp">
             <TextView
-                android:id="@+id/gym3"
+                android:id="@+id/gymc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Back"
@@ -322,7 +321,7 @@
             android:orientation="vertical"
             android:layout_marginLeft="10dp">
             <TextView
-                android:id="@+id/gym4"
+                android:id="@+id/gymd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Lower"
@@ -401,7 +400,7 @@
             android:orientation="vertical"
             android:layout_marginLeft="10dp">
             <TextView
-                android:id="@+id/gym5"
+                android:id="@+id/gyme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Abs"

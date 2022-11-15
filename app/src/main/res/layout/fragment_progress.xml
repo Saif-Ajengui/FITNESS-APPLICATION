@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Progress">
+    tools:context=".ProgressFragment">
 
 
     <TextView
@@ -38,8 +38,8 @@
                 android:layout_height="48dp"
                 android:background="@drawable/circle_pink_blue"
                 android:gravity="center"
-                android:text="Mon"
-                android:textSize="19sp"
+                android:text="Day1"
+                android:textSize="16sp"
                 android:textColor="#0e1843"
                 />
 
@@ -67,6 +67,7 @@
                 android:orientation="horizontal"
                 >
                 <TextView
+                    android:id="@+id/gymOne"
                     android:layout_width="190dp"
                     android:layout_height="wrap_content"
                     android:text="Push"
@@ -74,16 +75,17 @@
                     android:textStyle="bold"
                     android:textColor="#0e1843"
                     />
+
                 <TextView
+                    android:id="@+id/status1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="To Do"
-                    android:textSize="12dp"
-                    android:textColor="#0e1843"
                     android:background="@color/purple_200"
                     android:clickable="true"
-                    />
+                    android:text="To Do"
+                    android:textColor="#0e1843"
+                    android:textSize="12dp" />
 
             </LinearLayout>
 
@@ -93,24 +95,22 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/nbrOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="5"
+                    android:textColor="#0e1843"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    android:text="5 Exercices"
+                    android:text=" Exercices"
                     android:layout_marginTop="6dp"
                     android:textSize="16sp"
                     android:textColor="#0e1843"
-                    android:textStyle="bold"
-                    />
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="end"
-                    android:layout_marginRight="0dp"
-                    android:text="45 min"
-                    android:layout_marginTop="6dp"
-                    android:textSize="16sp"
-                    android:textColor="#CDCDCD"
                     android:textStyle="bold"
                     />
             </LinearLayout>
@@ -137,8 +137,8 @@
                 android:layout_height="48dp"
                 android:background="@drawable/circle_pink_blue"
                 android:gravity="center"
-                android:text="Tue"
-                android:textSize="19sp"
+                android:text="Day2"
+                android:textSize="16sp"
                 android:textColor="#0e1843"
                 />
 
@@ -167,6 +167,7 @@
                 android:orientation="horizontal"
                 >
                 <TextView
+                    android:id="@+id/gym2"
                     android:layout_width="190dp"
                     android:layout_height="wrap_content"
                     android:text="Pul"
@@ -175,6 +176,7 @@
                     android:textColor="#0e1843"
                     />
                 <TextView
+                    android:id="@+id/status2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -192,24 +194,23 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/nbr2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
-                    android:text="5 Exercices"
+                    android:text="5"
                     android:layout_marginTop="6dp"
                     android:textSize="16sp"
                     android:textColor="#0e1843"
                     android:textStyle="bold"
                     />
                 <TextView
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="end"
-                    android:layout_marginRight="0dp"
-                    android:text="45 min"
+
+                    android:text=" Exercices"
                     android:layout_marginTop="6dp"
                     android:textSize="16sp"
-                    android:textColor="#CDCDCD"
+                    android:textColor="#0e1843"
                     android:textStyle="bold"
                     />
             </LinearLayout>
@@ -236,8 +237,8 @@
                 android:layout_height="48dp"
                 android:background="@drawable/circle_pink_blue"
                 android:gravity="center"
-                android:text="Wed"
-                android:textSize="19sp"
+                android:text="Day3"
+                android:textSize="15sp"
                 android:textColor="#0e1843"
                 />
 
@@ -266,6 +267,7 @@
                 android:orientation="horizontal"
                 >
                 <TextView
+                    android:id="@+id/gym3"
                     android:layout_width="190dp"
                     android:layout_height="wrap_content"
                     android:text="Back"
@@ -274,6 +276,7 @@
                     android:textColor="#0e1843"
                     />
                 <TextView
+                    android:id="@+id/status3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -291,24 +294,23 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/nbr3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
-                    android:text="5 Exercices"
+                    android:text="5"
                     android:layout_marginTop="6dp"
                     android:textSize="16sp"
                     android:textColor="#0e1843"
                     android:textStyle="bold"
                     />
                 <TextView
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="end"
-                    android:layout_marginRight="0dp"
-                    android:text="45 min"
+
+                    android:text=" Exercices"
                     android:layout_marginTop="6dp"
                     android:textSize="16sp"
-                    android:textColor="#CDCDCD"
+                    android:textColor="#0e1843"
                     android:textStyle="bold"
                     />
             </LinearLayout>
@@ -335,8 +337,8 @@
                 android:layout_height="48dp"
                 android:background="@drawable/circle_pink_blue"
                 android:gravity="center"
-                android:text="Thur"
-                android:textSize="19sp"
+                android:text="Day4"
+                android:textSize="16sp"
                 android:textColor="#0e1843"
                 />
 
@@ -364,6 +366,7 @@
                 android:orientation="horizontal"
                 >
                 <TextView
+                    android:id="@+id/gym4"
                     android:layout_width="190dp"
                     android:layout_height="wrap_content"
                     android:text="Lower"
@@ -372,6 +375,7 @@
                     android:textColor="#0e1843"
                     />
                 <TextView
+                    android:id="@+id/status4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -389,24 +393,22 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/nbr4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
-                    android:text="5 Exercices"
+                    android:text="5"
                     android:layout_marginTop="6dp"
                     android:textSize="16sp"
                     android:textColor="#0e1843"
                     android:textStyle="bold"
                     />
                 <TextView
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="end"
-                    android:layout_marginRight="0dp"
-                    android:text="45 min"
+                    android:text=" Exercices"
                     android:layout_marginTop="6dp"
                     android:textSize="16sp"
-                    android:textColor="#CDCDCD"
+                    android:textColor="#0e1843"
                     android:textStyle="bold"
                     />
             </LinearLayout>
@@ -433,8 +435,8 @@
                 android:layout_height="48dp"
                 android:background="@drawable/circle_pink_blue"
                 android:gravity="center"
-                android:text="Frid"
-                android:textSize="19sp"
+                android:text="Day5"
+                android:textSize="16sp"
                 android:textColor="#0e1843"
                 />
 
@@ -461,6 +463,7 @@
                 android:orientation="horizontal"
                 >
                 <TextView
+                    android:id="@+id/gym5"
                     android:layout_width="190dp"
                     android:layout_height="wrap_content"
                     android:text="Abs"
@@ -469,6 +472,7 @@
                     android:textColor="#0e1843"
                     />
                 <TextView
+                    android:id="@+id/status5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -486,24 +490,22 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/nbr5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
-                    android:text="5 Exercices"
+                    android:text="5"
                     android:layout_marginTop="6dp"
                     android:textSize="16sp"
                     android:textColor="#0e1843"
                     android:textStyle="bold"
                     />
                 <TextView
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="end"
-                    android:layout_marginRight="0dp"
-                    android:text="45 min"
+                    android:text=" Exercices"
                     android:layout_marginTop="6dp"
                     android:textSize="16sp"
-                    android:textColor="#CDCDCD"
+                    android:textColor="#0e1843"
                     android:textStyle="bold"
                     />
             </LinearLayout>

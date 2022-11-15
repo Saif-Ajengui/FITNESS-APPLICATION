@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.salledesportapplication.ui.abdos.AbdosFragment;
@@ -25,7 +26,8 @@ public class GymPlanFragment extends Fragment {
 
     //widgets
     private Button addBtn,deleteBtn;
-    private TextView gymOne,nbrOne,gym2,nbr2,gym3,nbr3,gym4,nbr4,gym5,nbr5;
+    private TextView nbrOne,nbr2,nbr3,nbr4,nbr5,gymOne,gym2,gym3,gym4,gym5;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -34,19 +36,19 @@ public class GymPlanFragment extends Fragment {
         View root =  inflater.inflate(R.layout.fragment_gym_plan, container, false);
         addBtn = root.findViewById(R.id.addBtn);
         deleteBtn = root.findViewById(R.id.deleteBtn);
-        gymOne = root.findViewById(R.id.gymOne);
+        gymOne = root.findViewById(R.id.gyma);
         nbrOne = root.findViewById(R.id.nbrOne);
 
-        gym2 = root.findViewById(R.id.gym2);
+        gym2 = root.findViewById(R.id.gymb);
         nbr2 = root.findViewById(R.id.nbr2);
 
-        gym3 = root.findViewById(R.id.gym3);
+        gym3 = root.findViewById(R.id.gymc);
         nbr3 = root.findViewById(R.id.nbr3);
 
-        gym4 = root.findViewById(R.id.gym4);
+        gym4 = root.findViewById(R.id.gymd);
         nbr4 = root.findViewById(R.id.nbr4);
 
-        gym5 = root.findViewById(R.id.gym5);
+        gym5 = root.findViewById(R.id.gyme);
         nbr5 = root.findViewById(R.id.nbr5);
 
         //init db
@@ -122,6 +124,10 @@ public class GymPlanFragment extends Fragment {
             nbr5.setText("number");
         }
 
+
+
+
+
         return root;
     }
 
@@ -132,47 +138,12 @@ public class GymPlanFragment extends Fragment {
         //save values to db
         GymPlanModel gp = new GymPlanModel(gymOne,nbr_exercices_DayOne,false,gym2,nbr_exercices_Day2,false,gym3,nbr_exercices_Day3,false,gym4,nbr_exercices_Day4,false,gym5,nbr_exercices_Day5,false);
 
-        try{
-            ajouterGymPlan(gp);
-            this.gymOne.setText(afficherGymPlan().getDay1());
-            this.nbrOne.setText(String.valueOf(afficherGymPlan().getNb_exercices1()));
 
-            this.gym2.setText(afficherGymPlan().getDay2());
-            this.nbr2.setText(String.valueOf(afficherGymPlan().getNb_exercices2()));
-
-            this.gym3.setText(afficherGymPlan().getDay3());
-            this.nbr3.setText(String.valueOf(afficherGymPlan().getNb_exercices3()));
-
-            this.gym4.setText(afficherGymPlan().getDay4());
-            this.nbr4.setText(String.valueOf(afficherGymPlan().getNb_exercices4()));
-
-            this.gym5.setText(afficherGymPlan().getDay5());
-            this.nbr5.setText(String.valueOf(afficherGymPlan().getNb_exercices5()));
-        }   catch (NullPointerException e)
-        {
-            this.gymOne.setText("Gym");
-            this.nbrOne.setText("number");
-
-            this.gym2.setText("Gym");
-            this.nbr2.setText("number");
-
-            this.gym3.setText("Gym");
-            this.nbr3.setText("number");
-
-            this.gym4.setText("Gym");
-            this.nbr4.setText("number");
-
-            this.gym5.setText("Gym");
-            this.nbr5.setText("number");
-        }
 
 
     }
-    public void ajouterGymPlan(GymPlanModel gp)
-    {
-        database.gymPlanDAO().deleteGymPlan();
-        database.gymPlanDAO().insertGymPlan(gp);
-    }
+
+
     public GymPlanModel afficherGymPlan()
     {
         return  database.gymPlanDAO().getGymPlan();

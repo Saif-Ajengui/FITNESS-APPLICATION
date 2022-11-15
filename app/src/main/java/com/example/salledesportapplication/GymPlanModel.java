@@ -1,5 +1,7 @@
 package com.example.salledesportapplication;
 
+import android.widget.EditText;
+
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -95,6 +97,8 @@ public class GymPlanModel {
         this.day5 = day5;
         this.nb_exercices5 = nb_exercices5;
     }
+
+
 
     //GETTERS
 
